@@ -27,7 +27,7 @@
  Python 3.10+ is required (uses `str | None` union type syntax)
 
 ## CORE (stdlib only — no install needed):
-  hashlib, itertools, threading, argparse, json, os, time, sys, re
+  hashlib, itertools, threading, argparse, json, os, time, sys
 
  ## How TO Run...
 1. Hash a password to get your target
