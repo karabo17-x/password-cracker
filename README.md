@@ -3,16 +3,23 @@
 
  ## Project Layout...password_cracker
  
-├── crack.py              -> Main CLI 
+├── crack.py              -> Main CLI /
+
 ├── core/
-│   └── hasher.py         -> MD5, SHA1, SHA256, SHA512, bcrypt + auto-detect
+│   └── hasher.py         -> MD5, SHA1, SHA256, SHA512, bcrypt + auto-detect/
+
 ├── attacks/
-│   ├── dictionary.py     -> Wordlist line-by-line attack
-│   ├── brute_force.py    -> Exhaustive itertools.product generator
-│   └── hybrid.py         -> Dict + leet/digits/symbols/case mutations
+│   ├── dictionary.py     -> Wordlist line-by-line attack/
+
+│   ├── brute_force.py    -> Exhaustive itertools.product generator/
+
+│   └── hybrid.py         -> Dict + leet/digits/symbols/case mutations/
+
 ├── utils/
-│   ├── display.py        -> Progress bar, result banner, stats table
-│   └── wordlist_gen.py   -> Generate common/numeric/leet wordlists
+│   ├── display.py        -> Progress bar, result banner, stats table/
+
+│   └── wordlist_gen.py   -> Generate common/numeric/leet wordlists/
+
 └── wordlists/
     └── common.txt        -> ~100 bundled passwords to start with
 
