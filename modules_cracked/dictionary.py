@@ -8,7 +8,7 @@ def dictionary_attack(
   algorithm: str,
   verbose: bool = False,
   delay: float = 0.0
-) -> tuplet[str | None, int]:
+) -> tuple[str | None, int]:
   print(f"\n \033[94m[*]\033[0m Starting dictionary attack...")
   print(f"  \033[94m[*]\033[0m Wordlist : {wordlist_path}")
   print(f"  \033[94m[*]\033[0m Algorithm: {algorithm.upper()}\n")
