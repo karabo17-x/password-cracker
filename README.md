@@ -33,6 +33,7 @@ Built for **learning, experimentation, and cybersecurity practice**.
 ---
 
 ## 📁 Project Structure
+```
 password_cracker/
 │
 ├── crack.py # Main CLI entry point
@@ -51,8 +52,7 @@ password_cracker/
 │
 └── wordlists/
 └── common.txt # Starter passwords
-
-
+```
 ---
 
 ## ⚙️ Requirements
@@ -93,6 +93,7 @@ python crack.py attack -t <HASH> -m hybrid -w wordlists/common.txt -a sha256
 python crack.py wordlist -o wordlists/custom.txt --type leet --min 6 --max 10
 ```
 ### 📊 Example Output
+```
 [+] Target Hash Detected: SHA256
 [+] Attack Mode: Dictionary
 [+] Trying passwords...
@@ -100,5 +101,6 @@ python crack.py wordlist -o wordlists/custom.txt --type leet --min 6 --max 10
 [✓] Password Found: dragon
 [⏱] Time Elapsed: 0.02s
 [📈] Attempts: 152
+```
 
 
