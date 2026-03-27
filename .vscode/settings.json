@@ -1,0 +1,8 @@
+{
+    "chat.tools.terminal.autoApprove": {
+        "/^cd /home/xster/Password-Cracker && python3 -c \"\nfrom hasher import hash_password\nfrom wordlist_gen import generate_wordlist\nfrom dictionary import dictionary_attack\nimport tempfile, os\n\npassword = 'test123'\nh = hash_password\\(password, 'sha256'\\)\nprint\\('✓ Hash function works'\\)\n\nwith tempfile\\.TemporaryDirectory\\(\\) as tmpdir:\n    wl = os\\.path\\.join\\(tmpdir, 't\\.txt'\\)\n    cnt = generate_wordlist\\(wl, 4, 6, 'common'\\)\n    print\\(f'✓ Wordlist generation: \\{cnt\\} words'\\)\n    found, attempts = dictionary_attack\\(h, wl, 'sha256'\\)\n    status = 'FOUND' if found == password else f'searched \\(\\{attempts\\} attempts\\)'\n    print\\(f'✓ Dictionary attack: \\{status\\}'\\)\n    \nprint\\('✓ All components working!'\\)\n\"$/": {
+            "approve": true,
+            "matchCommandLine": true
+        }
+    }
+}
